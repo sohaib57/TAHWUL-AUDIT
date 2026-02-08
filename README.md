@@ -64,6 +64,4 @@ npm run build
 
 ### Live URL
 
-After deploying, paste your URL here (Vercel/Netlify/etc.):
-
-- **App URL**: _(add link)_
+**Live Application**: [https://tahwul-audit.netlify.app](https://tahwul-audit.netlify.app)
