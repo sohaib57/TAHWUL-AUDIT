@@ -206,7 +206,13 @@
 }
 
 .perspectiveColWrapper > .standardCard {
-  flex: 1 1 auto;
+  flex: 1 1 0;
+  min-height: fit-content;
+}
+
+.perspectiveColWrapper > .perspectiveCol {
+  flex: 0 0 auto;
+  align-self: stretch;
 }
 
 .emptyCard {
@@ -228,10 +234,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 92px;
   text-align: center;
   min-width: 0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100px;
 }
 
 .perspectiveCol:hover {
@@ -300,17 +308,21 @@
   width: 100%;
   overflow-wrap: break-word;
   word-break: break-word;
+  flex-shrink: 0;
 }
 
 .statusRow {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   justify-items: center;
   align-items: center;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
 }
 
 .statusDot {

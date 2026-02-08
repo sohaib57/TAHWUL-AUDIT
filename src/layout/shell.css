@@ -201,9 +201,9 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  background: #F5F8FA;
-  border: 1px solid #E0E8ED;
-  border-radius: 8px;
+  background: #F9FAFA;
+  border: none;
+  border-radius: 30px;
   padding: 6px 12px;
 }
 
