@@ -4,7 +4,7 @@ type TopbarProps = {
   year?: string
 }
 
-export function Topbar({ year }: TopbarProps) {
+export function Topbar({}: TopbarProps) {
   return (
     <header className="topbar">
       <div className="searchWrap">

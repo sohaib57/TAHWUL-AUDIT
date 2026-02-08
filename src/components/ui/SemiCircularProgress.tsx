@@ -84,7 +84,6 @@ export function SemiCircularProgress({
             pathColor: color,
             trailColor: trackColor,
             pathTransition: 'none',
-            trailTransition: 'none',
           })}
         />
       </div>

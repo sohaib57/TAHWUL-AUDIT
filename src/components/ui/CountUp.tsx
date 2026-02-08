@@ -16,7 +16,6 @@ export function CountUp({
   suffix = ''
 }: CountUpProps) {
   const [count, setCount] = useState(0)
-  const [isAnimating, setIsAnimating] = useState(false)
 
   useEffect(() => {
     const numValue = typeof value === 'string' 
@@ -28,7 +27,6 @@ export function CountUp({
       return
     }
 
-    setIsAnimating(true)
     const startTime = Date.now()
     const startValue = 0
 
@@ -45,7 +43,6 @@ export function CountUp({
         requestAnimationFrame(animate)
       } else {
         setCount(numValue)
-        setIsAnimating(false)
       }
     }
 
