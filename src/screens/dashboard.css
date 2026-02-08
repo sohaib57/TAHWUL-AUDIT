@@ -347,6 +347,12 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr 0.9fr;
   gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gridBottomWide > .card:first-child {
+  grid-column: span 2;
 }
 
 .activityCard {
@@ -354,8 +360,8 @@
 }
 
 .activityCardTitle {
-  margin-bottom: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #E0E8ED;
 }
 
@@ -363,7 +369,7 @@
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
   transition: background-color 0.2s ease;
 }
@@ -394,7 +400,7 @@
 }
 
 .activityTitle {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   color: #1D3557;
   line-height: 1.4;
@@ -423,8 +429,8 @@
 .leaderRow {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 0;
+  gap: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -434,8 +440,8 @@
 }
 
 .leaderRow .avatar {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
   background: #1D3557;
   display: inline-flex;
@@ -449,15 +455,15 @@
 }
 
 .leaderName {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #1D3557;
   line-height: 1.4;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .leaderRole {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--muted);
   font-weight: 500;
   line-height: 1.4;
@@ -467,13 +473,13 @@
 .leaderScore {
   margin-left: auto;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 13px;
   color: #1D3557;
   white-space: nowrap;
 }
 
 .complianceTitle {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #1D3557;
 }
 
@@ -482,8 +488,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  min-height: 180px;
+  padding-top: 12px;
+  min-height: 160px;
 }
 
 .complianceText {
@@ -491,7 +497,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 280px;
+  width: 240px;
   text-align: center;
   pointer-events: none;
   padding: 0;
@@ -500,7 +506,7 @@
 
 .complianceValue {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 48px;
   letter-spacing: -0.02em;
   color: #1D3557;
   line-height: 1.2;
@@ -508,9 +514,9 @@
 
 .complianceLabel {
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--muted);
-  margin-top: 8px;
+  margin-top: 6px;
   text-transform: capitalize;
 }
 
@@ -596,6 +602,10 @@
 
   .gridBottom {
     grid-template-columns: 1fr;
+  }
+
+  .gridBottomWide > .card:first-child {
+    grid-column: auto;
   }
 }
 

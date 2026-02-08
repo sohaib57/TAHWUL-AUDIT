@@ -75,6 +75,9 @@ textarea {
   background: var(--bg);
   width: 100%;
   max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -113,6 +116,9 @@ textarea {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cardPad {

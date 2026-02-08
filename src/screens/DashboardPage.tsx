@@ -200,8 +200,8 @@ export function DashboardPage() {
             <SemiCircularProgress
               value={d.compliance.value}
               color="#DB1F26"
-              size={280}
-              strokeWidth={20}
+              size={240}
+              strokeWidth={18}
               trackColor="#E0E8ED"
               strokeLinecap="round"
             />
@@ -270,7 +270,7 @@ export function DashboardPage() {
 
       <div style={{ height: 16 }} />
 
-      <div className="twoCol">
+      <div className="gridBottom gridBottomWide">
         <div className="card cardPad">
           <div className="h1" style={{ marginBottom: 10 }}>
             12-Month Performance
@@ -278,7 +278,7 @@ export function DashboardPage() {
           <div className="chartWrap">
             <BarChart
               data={d.monthlyPerformance.map((x) => ({
-                label: x.month,
+                label: x.month, 
                 value: x.value,
               }))}
             />
