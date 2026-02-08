@@ -207,7 +207,7 @@ export function DashboardPage() {
             />
             <div className="complianceText">
               <div className="complianceValue">
-                <CountUp value={d.compliance.value} duration={1500} decimals={2} suffix="%" />
+                <CountUp value={d.compliance.value} duration={1500} decimals={0} suffix="%" />
               </div>
               <div className="complianceLabel">{d.compliance.label}</div>
             </div>

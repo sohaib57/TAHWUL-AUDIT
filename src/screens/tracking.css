@@ -6,6 +6,47 @@
   margin-bottom: 12px;
 }
 
+.trackingHeader .h1 {
+  font-weight: 400;
+}
+
+.table th {
+  font-weight: 800;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  text-align: center;
+}
+
+.table td {
+  font-weight: 400;
+}
+
+.table td > * {
+  font-weight: 400;
+}
+
+.table td .muted {
+  font-weight: 400;
+}
+
+.rowTitle {
+  font-weight: 400;
+  color: #1D3557;
+}
+
+.rowSub {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.table .badge {
+  font-weight: 400;
+}
+
 .filters {
   display: flex;
   gap: 8px;
@@ -62,7 +103,7 @@
   padding: 8px 0;
   border-bottom: 1px solid var(--border);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   color: #1D3557;
 }
 
@@ -112,7 +153,15 @@
 
 .k {
   color: var(--muted);
-  font-weight: 900;
+  font-weight: 400;
+}
+
+.kv > div:not(.k) {
+  font-weight: 400;
+}
+
+.kv .badge {
+  font-weight: 400;
 }
 
 

@@ -73,7 +73,7 @@ export function TrackingPage() {
                       r.id === selectedId ? 'rgba(27, 98, 196, 0.06)' : undefined,
                   }}
                 >
-                  <td style={{ fontWeight: 900 }}>{r.code}</td>
+                  <td>{r.code}</td>
                   <td>
                     <div className="rowTitle">{r.title}</div>
                     <div className="rowSub">{r.tags.join(' • ')}</div>
@@ -97,8 +97,8 @@ export function TrackingPage() {
                         }}
                       />
                     </div>
-                    <div className="muted" style={{ fontSize: 11, fontWeight: 900, marginTop: 4 }}>
-                      {r.progress}%
+                    <div className="muted" style={{ fontSize: 11, marginTop: 4 }}>
+                      {Math.round(r.progress)}%
                     </div>
                   </td>
                   <td>

@@ -55,7 +55,9 @@ export function CountUp({
     }
   }, [value, duration])
 
-  const formattedValue = count.toFixed(decimals)
+  const formattedValue = decimals === 0 
+    ? Math.round(count).toString()
+    : count.toFixed(decimals)
   
   let displayValue = `${prefix}${formattedValue}${suffix}`
   

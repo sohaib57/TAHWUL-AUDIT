@@ -78,7 +78,7 @@
 }
 
 .detailsCrumbTitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text);
 }
@@ -176,7 +176,7 @@
   border: none;
   cursor: pointer;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   padding: 8px 16px;
   border-radius: 8px;
   color: #8597A8;
@@ -223,7 +223,7 @@
   border: 1px solid #E0E8ED;
   border-radius: 12px;
   padding: 12px 18px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: #1D3557;
   line-height: 1.4;
@@ -238,7 +238,7 @@
   background: #F5F8FA;
   border: 1px solid #E0E8ED;
   border-radius: 12px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   color: #1D3557;
   white-space: pre-line;
